@@ -4,7 +4,9 @@ export function ChessPositionX() {
     return (
         <div className="flex flex-row items-center">
             {names.map((name) => (
-                <div className="flex justify-center items-center w-16 h-4 text-black">
+                <div
+                    className="flex justify-center items-center w-16 h-4 text-black"
+                    key={`${name}-xpos`}>
                     {name}
                 </div>
             ))}
@@ -18,7 +20,9 @@ export function ChessPositionY() {
     return (
         <div className="flex flex-col">
             {numbers.map((number) => (
-                <div className="flex justify-center items-center w-4 h-16 text-black">
+                <div
+                    className="flex justify-center items-center w-4 h-16 text-black"
+                    key={`${number}-ypos`}>
                     {number}
                 </div>
             ))}
