@@ -107,6 +107,8 @@ export default function ChessBoard() {
                                                     //     )
                                                     true
                                                 ) {
+                                                    if (fig) fig.eat();
+                                                    
                                                     const newFigures =
                                                         figures.filter(
                                                             (fig) =>

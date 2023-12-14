@@ -25,7 +25,7 @@ export default function ChessSquare({
                 figure?.color === ChessColor.WHITE ? "text-white" : "text-black"
             } ${selected && "bg-orange-900"}`}
             onClick={onClick}>
-            {figure && figure.getFigureName()}
+            {figure && !figure.isEaten && figure.getFigureName()}
         </div>
     );
 }
